@@ -1,11 +1,11 @@
 import numpy as np
 import cv2
 
-# Load an color image in grayscale
+# Load an color image in greyscale
 
 img = cv2.imread('m5.jpg',0)
 
-# Make image symmetrical.
+# Make image symmetrical
 
 resized = cv2.resize(img, (int(img.shape[1] * 2),int(img.shape[0] * 2)))
 
@@ -14,6 +14,7 @@ resized = cv2.resize(img, (int(img.shape[1] * 2),int(img.shape[0] * 2)))
 cv2.imshow('Shopping',resized)
 print(img.shape)
 
-# Close image, with any key.
+# Close image, with any key
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
