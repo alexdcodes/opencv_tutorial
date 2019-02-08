@@ -9,8 +9,12 @@ img = cv2.imread('m5.jpg',0)
 
 resized = cv2.resize(img, (int(img.shape[1]/2),int(img.shape[0]/2)))
 
+# Name of Image, and resize image (create label)
+
 cv2.namedWindow('Shopping', cv2.WINDOW_NORMAL)
 cv2.imshow('Shopping',resized)
 print(img.shape)
+
+# Close image, with any key. 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
