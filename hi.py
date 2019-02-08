@@ -2,9 +2,12 @@ import numpy as np
 import cv2
 
 # Load an color image in grayscale
-img = cv2.imread('m.jpg',0)
 
-resized = cv2.resize(img, (600,600))
+img = cv2.imread('m5.jpg',0)
+
+# Make image symmetrical.
+
+resized = cv2.resize(img, (int(img.shape[1]/2),int(img.shape[0]/2)))
 
 cv2.namedWindow('Shopping', cv2.WINDOW_NORMAL)
 cv2.imshow('Shopping',resized)
